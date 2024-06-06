@@ -56,6 +56,3 @@ def predict():
         return jsonify({'caption': caption})
     else:
         return jsonify({'predicted_label': predicted_label, 'message': 'Please upload a chest X-ray image.'})
-
-if __name__ == '__main__':
-    app.run(debug=True)
